@@ -1,0 +1,13 @@
+<p>first works!</p>
+<!-- <p>{{hello}}</p> -->
+<!--Ancien maniere de faire -->
+<ul>
+    <li *ngFor="let m of hello">{{m}}</li>
+</ul>
+<!--nouvelle maniere de faire avec angular 17 -->
+<ul>
+    @for (m2 of hello; track $index) {
+        <li>{{m2}}</li>
+    }
+    
+</ul> 
